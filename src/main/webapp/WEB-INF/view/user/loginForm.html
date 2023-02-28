@@ -7,11 +7,6 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .ailgn_center {
-            display: flex;
-            justify-content: center;
-        }
-
         .liek {
             line-height: 50px;
         }
@@ -19,81 +14,112 @@
         .my-div {
             height: 0px;
         }
+
+        .textmargin {
+            font-size: 1.5em;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        .qButton {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: inline;
+            float: right;
+            margin-right: 3em;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 0.2em 2em;
+        }
+
+        /* body {
+            cursor: none;
+        } */
+        .top_category>div:hover {
+            color: rgb(87, 87, 230);
+        }
+
+        .menu_bar a:hover {
+            background-color: antiquewhite;
+        }
     </style>
+    <script>
+        function kiup() {
+            alert("기업");
+        }
+        function gein() {
+            alert("개인");
+        }
+    </script>
 </head>
 
 <body>
-    <div class="div_butter" style="height: -3cm;">
-        <div style="text-indent: 13cm;">
-            <h1 style="vertical-align: bottom; text-align: left; " class="my-div">회사명</h1>
+    <div>
+        <div style="font-size: 2em; font-weight : bold; display:inline; margin-left : 3em;">
+            회사명
         </div>
-        <div style="text-indent: 18cm;">
-            <h1 style="font-size: xx-large;">고객 서비스</h1>
+        <div style="font-size: 2em; font-weight : bold; display:inline; margin-left : 1em;">
+            고객 서비스
         </div>
+        <button type="submit" class="qButton" style="border-radius: 30px;">문의하기</button>
         <hr>
-        <button style="font-size: xx-large">문의하기</button>
     </div>
 
-    <div class="ailgn_center">
+    <div style="text-align : center;">
         <form action="/login" method="post">
-            <h1 style="font-size: 1.5cm">~~~에 궁금한 점을 물어보세요 !</h1>
-            <ul>
-                <input type="text" size="40px" style="font-size: xx-large;" placeholder="비밀번호를 찾고싶어요.">
-            </ul>
+            <h1 style="font-size: 3em;">~~~에 궁금한 점을 물어보세요 !</h1>
+            <input type="text" size="40px" style="font-size: 2em;" placeholder="비밀번호를 찾고싶어요.">
         </form>
-    </div>
-    <table>
-        <tr>
-            <ul>
-                <div class="static">
-                    <div style="line-height: 20%;">
-                        <h2>
-                            <div style="text-indent: 20cm;">
-                                <p class="jx_xx_large" style="font-size: 1cm;">개인회원 자주묻는 질문</p>
-                            </div>
-                        </h2>
-                        <br>
-                        <div class="liek">
-                            <h2 style="text-indent: 20cm;">~~~ 이력서 양식을 꼭 사용해야하나요?</h2>
-                            <h2 style="text-indent: 20cm;">아이디 생성은 최대 몇개까지 가능한가요?</h2>
-                            <h2 style="text-indent: 20cm;">취업활동증명서 발급은 어떻게 하나요?</h2>
-                            <h2 style="text-indent: 20cm;">매치업 이력서 열람 제한 기업 설정방법</h2>
-                            <h2 style="text-indent: 20cm;">매치업 이력서 열람 제한 기업 설정방법</h2>
-                            <h2 style="text-indent: 20cm;">매치업 이력서 열람 제한 기업 설정방법</h2>
-                            <h2 style="text-indent: 20cm;">매치업 이력서 열람 제한 기업 설정방법</h2>
-                        </div>
-                    </div>
-                </div>
-            </ul>
-        </tr>
-    </table>
-</body>
-<!-- dd -->
+        <div style="margin-top: 150px;">
+        </div>
+        <div style="text-align : center;">
+            <div style="display: flex; justify-content: center;">
+                <div style="text-align: left; margin-right: 3em;">
 
-<body>
-    <table>
-        <tr>
-            <ul>
-                <div style="line-height: 20%;" class="button">
-                    <h2>
-                        <div style="text-indent: 40cm;">
-                            <p class="jx_xx_large" style="font-size: 1cm;">기업회원 자주묻는 질문</p>
-                        </div>
-                    </h2>
-                    <br>
-                    <div class="liek">
-                        <h2 style="text-indent: 40cm;">기업 서비스 가입, 이용 절차가 궁금합니다.</h2>
-                        <h2 style="text-indent: 40cm;">매치업 서비스를 이용하고 싶어요.</h2>
-                        <h2 style="text-indent: 40cm;">매치업 서비스를 이용하고 싶어요.</h2>
-                        <h2 style="text-indent: 40cm;">최종 합격 처리 후, 채용 수수료 정산은 어떻게 하나요?</h2>
-                        <h2 style="text-indent: 40cm;">단기 계약직 혹은 프리랜서 채용도 가능한가요?</h2>
-                        <h2 style="text-indent: 40cm;">단기 계약직 혹은 프리랜서 채용도 가능한가요?</h2>
-                        <h2 style="text-indent: 40cm;">단기 계약직 혹은 프리랜서 채용도 가능한가요?</h2>
+                    <div class="menu_bar">
+                        <button type="button"
+                            style="text-align: left; background-color: rgb(240, 240, 241); border: none; padding: 5em 15em; border-radius: 10px;"
+                            onclick="gein();">
+                            <div style="font-weight : bold; font-size: 2.5em; color: rgb(86, 87, 87);">개인회원</div>
+                            <div style="font-size: 1.5em;">개인회원을 위한 이용 안내입니다.</div>
+                        </button>
+                    </div>
+
+                    <h1>개인회원 자주묻는 질문</h1>
+                    <div class="top_category">
+                        <div class="textmargin" style="font-size: 1.4em;">~~~ 이력서 양식을 꼭 사용해야하나요?</div>
+                        <div class="textmargin" style="font-size: 1.4em;">아이디 생성은 최대 몇개까지 가능한가요?</div>
+                        <div class="textmargin" style="font-size: 1.4em;">취업활동증명서 발급은 어떻게 하나요?</div>
+                        <div class="textmargin" style="font-size: 1.4em;">매치업 이력서 열람 제한 기업 설정방법</div>
+                        <div class="textmargin" style="font-size: 1.4em;">매치업 이력서 열람 제한 기업 설정방법</div>
+                        <div class="textmargin" style="font-size: 1.4em;">매치업 이력서 열람 제한 기업 설정방법</div>
+                        <div class="textmargin" style="font-size: 1.4em;">매치업 이력서 열람 제한 기업 설정방법</div>
                     </div>
                 </div>
-            </ul>
-        </tr>
-    </table>
+
+                <div style="text-align: left;">
+
+                    <button type="button"
+                        style="text-align: left; background-color: rgb(240, 240, 241); border: none; padding: 5em 15em; border-radius: 10px;"
+                        onclick="kiup();">
+                        <div style="font-weight : bold; font-size: 2.5em; color: rgb(87, 87, 87);">기업회원</div>
+                        <div style="font-size: 1.5em;">기업회원을 위한 이용 안내입니다.</div>
+                    </button>
+                    <h1>기업회원 자주묻는 질문</h1>
+                    <div class="top_category">
+                        <div class="textmargin" style="font-size: 1.4em;">기업 서비스 가입, 이용 절차가 궁금합니다.</div>
+                        <div class="textmargin" style="font-size: 1.4em;">매치업 서비스를 이용하고 싶어요.</div>
+                        <div class="textmargin" style="font-size: 1.4em;">매치업 서비스를 이용하고 싶어요.</div>
+                        <div class="textmargin" style="font-size: 1.4em;">최종 합격 처리 후, 채용 수수료 정산은 어떻게 하나요?</div>
+                        <div class="textmargin" style="font-size: 1.4em;">단기 계약직 혹은 프리랜서 채용도 가능한가요?</div>
+                        <div class="textmargin" style="font-size: 1.4em;">단기 계약직 혹은 프리랜서 채용도 가능한가요?</div>
+                        <div class="textmargin" style="font-size: 1.4em;">단기 계약직 혹은 프리랜서 채용도 가능한가요?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
