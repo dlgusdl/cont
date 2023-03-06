@@ -94,11 +94,11 @@
         .form_input:focus {
             outline: none;
             /* transition: all 0.1s; */
-            transition: all ease-in 0.1s;
+            /* transition: all ease-in 0.1s; */
             /* border-style: groove; */
-            border-style: solid;
-            border-width: 0.3em;
-            border-color: rgb(192, 209, 255);
+            border: 5px solid #98a8fe;
+            /* border-width: 0.2em; */
+            /* border-color: rgb(148, 171, 242); */
         }
     </style>
     <script>
@@ -139,7 +139,8 @@
             </div>
             <button type="submit" class="qButton"
                 style="border-radius: 30px; padding: 1.5px 20px; margin-right: 0em; ;">
-                문의하기
+                <a href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/mmForm.html"
+                    style="text-decoration: none; color: rgb(253, 255, 255);"> 문의하기</a>
             </button>
             <hr>
         </div>
@@ -167,44 +168,82 @@
                                 </div>
                                 <div style="font-size: 1.2em;">개인회원을 위한 이용 안내입니다.</div>
                             </button>
-                            <div style="margin-top: 100px;">
-                            </div>
+                            <div style="margin-top: 100px;"></div>
                         </div>
 
 
-                        <h2 style="font-size: 1.7em; text-align: center;">개인회원 자주묻는 질문</h2>
+                        <h2 style="font-size: 1.7em; text-align: center; margin-right: 20px;">개인회원 자주묻는 질문</h2>
+                        <!-- <h2 style="font-size: 1.7em; text-align: center;">개인회원 자주묻는 질문</h2> -->
                         <div class="top_category">
-                            <div class="textmargin">~~~ 이력서 양식을 꼭 사용해야하나요?</div>
-                            <div class="textmargin">아이디 생성은 최대 몇개까지 가능한가요?</div>
-                            <div class="textmargin">취업활동증명서 발급은 어떻게 하나요?</div>
-                            <div class="textmargin">매치업 이력서 열람 제한 기업 설정방법</div>
-                            <div class="textmargin">매치업 이력서 열람 제한 기업 설정방법</div>
+                            <div class="textmargin"><a
+                                    href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/usertext1Form.html"
+                                    style="color: black; text-decoration: none;">
+                                    추천·채용 보상은 어떻게 지급되나요?</a></div>
+                            <div class="textmargin"><a
+                                    href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/usertext3Form.html"
+                                    style="color: black; text-decoration: none;">보상금 지급 대상자가 아니라고 뜹니다.</a></div>
+                            <div class="textmargin"><a
+                                    href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/usertext2Form.html"
+                                    style="color: black; text-decoration: none;">가입된 아이디를 찾고 싶어요</a></div>
+                            <div class="textmargin"><a
+                                    href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/usertext5Form.html"
+                                    style="color: black; text-decoration: none;">삭제한 이력서 복원이 가능한가요?</a></div>
+                            <div class="textmargin"><a
+                                    href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/usertext4Form.html"
+                                    style="color: black; text-decoration: none;">보상금 지급 정보를 늦게 제출 했습니다. 어떻게 되나요?</a>
+                            </div>
                         </div>
                     </div>
 
                     <div style="text-align: left;">
-
                         <button type="button"
-                            style="margin-left: 20px; text-align: left; background-color: rgb(240, 240, 241); border: none; padding: 2.5em 5em; border-radius: 10px;"
+                            style="text-align: left; background-color: rgb(240, 240, 241); border: none; padding: 2.5em 5em; border-radius: 10px;"
                             onclick="kiup();">
-                            <div style="font-weight : bold; font-size: 1.7em; color: rgb(87, 87, 87);">기업회원</div>
+                            <div class="div_category">
+                                <div style="font-weight : bold; font-size: 1.7em; color: rgb(86, 87, 87);">기업회원
+                                </div>
+                            </div>
                             <div style="font-size: 1.2em;">기업회원을 위한 이용 안내입니다.</div>
                         </button>
                         <div style="margin-top: 100px;">
-                        </div>
-                        <h2 style="font-size: 1.7em; text-align: center; margin-right: 19px;">기업회원 자주묻는 질문</h2>
-                        <div class="top_category">
-                            <div class="textmargin">기업 서비스 가입, 이용 절차가 궁금합니다.</div>
-                            <div class="textmargin">매치업 서비스를 이용하고 싶어요.</div>
-                            <div class="textmargin">매치업 서비스를 이용하고 싶어요.</div>
-                            <div class="textmargin">최종 합격 처리 후, 채용 수수료 정산은 어떻게 하나요?</div>
-                            <div class="textmargin">단기 계약직 혹은 프리랜서 채용도 가능한가요?</div>
+                            <!-- <button type="button"
+                            style="margin-left: 20px; text-align: left; background-color: rgb(240, 240, 241); border: none; padding: 2.5em 5em; border-radius: 10px;"
+                            onclick="kiup();">
+                            <div class="div_category">
+                                <div style="font-weight : bold; font-size: 1.7em; color: rgb(87, 87, 87);">기업회원</div>
+                            </div>
+                            <div style="font-size: 1.2em;">기업회원을 위한 이용 안내입니다.</div>
+                        </button>
+                        <div style="margin-top: 100px;">
+                        </div> -->
+
+                            <h2 style="font-size: 1.7em; text-align: center; margin-right: 30px;">기업회원 자주묻는 질문</h2>
+                            <div class="top_category">
+                                <div class="textmargin"><a
+                                        href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/jop1Form.html"
+                                        style="color: black; text-decoration: none; margin-right: 30px;">
+                                        매치업 서비스를 이용하고 싶어요.</a></div>
+                                <div class="textmargin"><a
+                                        href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/jop4Form.html"
+                                        style="color: black; text-decoration: none; margin-right: 30px;">최종 합격 처리 후, 채용
+                                        수수료 정산은 어떻게 하나요?</a>
+                                </div>
+                                <div class="textmargin"><a
+                                        href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/jop5Form.html"
+                                        style="color: black; text-decoration: none; margin-right: 30px;">
+                                        매치업 후보자의 각 상태별 의미가 궁금합니다</a></div>
+                                <div class="textmargin"><a
+                                        href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/jop3Form.html"
+                                        style="color: black; text-decoration: none; margin-right: 30px;">면접 진행은 어떻게
+                                        하나요?</a></div>
+                                <div class="textmargin"><a
+                                        href="file:///C:/workspace/myjava_leb/customer/src/main/webapp/WEB-INF/view/user/jop2Form.html"
+                                        style="color: black; text-decoration: none; margin-right: 30px;">원하는 직군/직무를 추가하고
+                                        싶어요</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
-
-</html>
